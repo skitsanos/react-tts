@@ -1,0 +1,10 @@
+.idea/
+dist/
+node_modules/
+Taskfile.dev.yaml
+
+# Local Netlify folder
+.netlify
+
+# Project exclude paths
+/src/.umi/core/routeProps.js

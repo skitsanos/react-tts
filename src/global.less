@@ -1,0 +1,60 @@
+//@import (css) url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+:root {
+  --base-color: #2baee9;
+}
+
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+}
+
+#root {
+  flex: 1;
+  font-weight: 300;
+  background-color: lightsteelblue;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.button-talk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  cursor: pointer;
+  height: 6rem;
+  width: 6rem;
+  border: solid 4px #000;
+  border-radius: 50%;
+  box-shadow: #333 0 0 5px;
+
+  .button-icon {
+    color: #fff;
+    height: 60%;
+    width: 60%;
+  }
+}
+
+.button-talk:hover {
+  background-color: var(--base-color);
+}
+
+.button-talk-online {
+  background-color: crimson !important;
+}
+
+.button-talk-offline {
+  background-color: #999999 !important;
+}
+
+// on click:
+.button-talk:active {
+  box-shadow: none;
+}

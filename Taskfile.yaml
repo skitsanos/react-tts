@@ -1,0 +1,23 @@
+version: 3
+
+tasks:
+  install:
+    silent: true
+    cmds:
+      - echo "Installing..."
+      - yarn install
+      - npx umi setup
+  start:
+    silent: true
+    cmds:
+      - echo "Starting..."
+      - npx umi dev
+  build:
+    cmds:
+      - echo "Building..."
+      - npx umi build
+  deploy:
+    cmds:
+      - echo "Deploying..."
+      - task build
+      - netlify deploy --prod --dir=dist
