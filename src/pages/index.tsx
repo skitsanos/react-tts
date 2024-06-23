@@ -2,7 +2,6 @@ import {Button, Card, Flex, Form, Input} from 'antd';
 import {useState} from 'react';
 import {playAudio, playFillerMessage, textToSpeechSynthesis} from '@/utils/audio';
 import TalkButton from '@/components/TalkButton';
-import {ReadyState} from 'ahooks/es/useWebSocket';
 
 export default () =>
 {

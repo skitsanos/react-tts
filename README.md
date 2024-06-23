@@ -1,4 +1,4 @@
-# react-mic
+# react-tts
 
 The user interface includes text-to-speech synthesis, enabling users to convert text input into speech. It also features buttons for playing various audio fillers, demonstrating how to load and utilize these audio messages effectively. The `TalkButton` component is central to this functionality, managing the microphone input, starting and stopping recordings, and handling the data availability event to process and play the recorded audio.
 
