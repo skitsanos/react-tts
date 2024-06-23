@@ -7,4 +7,4 @@ Taskfile.dev.yaml
 .netlify
 
 # Project exclude paths
-/src/.umi/core/routeProps.js
+**/.umi*

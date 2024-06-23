@@ -58,6 +58,13 @@ const TalkButton = ({
             recorder.stop();
             setRecorder(null);
         }
+
+        if (streamRef.current)
+        {
+            streamRef.current.getTracks().forEach(track => track.stop());
+            streamRef.current = null;
+        }
+
         setIsRecording(false);
     };
 
